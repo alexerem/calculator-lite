@@ -1,41 +1,40 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <title>Calculator Lite</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="grid-container">
             <div class="part input">
                 <form action="" name="form">
-                    <input type="text" readonly></form>
+                    <input type="text" name="textshow" placeholder="0" readonly>
+                </form>
             </div>
-            <div class="part">C</div>
-            <div class="part">(</div>
-            <div class="part">)</div>
-            <div class="part">&larr;</div>
-            <div class="part">7</div>
-            <div class="part">8</div>
-            <div class="part">9</div>
-            <div class="part">&divide;</div>
-            <div class="part">4</div>
-            <div class="part">5</div>
-            <div class="part">6</div>
-            <div class="part">&times;</div>
-            <div class="part">1</div>
-            <div class="part">2</div>
-            <div class="part">3</div>
-            <div class="part">-</div>
-            <div class="part">0</div>
-            <div class="part">.</div>
-            <div class="part">=</div>
-            <div class="part">+</div>
+            <div class="part clean" onclick="clean()">C</div>
+            <div class="part" onclick="place('(')">(</div>
+            <div class="part" onclick="place(')')"">)</div>
+            <div class="part back" onclick="back()">&larr;</div>
+            <div class="part" onclick="place('7')">7</div>
+            <div class="part" onclick="place('8')">8</div>
+            <div class="part" onclick="place('9')">9</div>
+            <div class="part" onclick="place('/')">&divide;</div>
+            <div class="part" onclick="place('4')">4</div>
+            <div class="part" onclick="place('5')">5</div>
+            <div class="part" onclick="place('6')">6</div>
+            <div class="part" onclick="place('*')">&times;</div>
+            <div class="part" onclick="place('1')">1</div>
+            <div class="part" onclick="place('2')">2</div>
+            <div class="part" onclick="place('3')">3</div>
+            <div class="part" onclick="place('-')">-</div>
+            <div class="part" onclick="place('0')">0</div>
+            <div class="part" onclick="place('.')">.</div>
+            <div class="part result" onclick="calculate()">=</div>
+            <div class="part" onclick="place('+')">+</div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>

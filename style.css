@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 
 .grid-container {
@@ -12,6 +13,7 @@
     grid-gap: 5px;
     padding: 15px;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .part {
@@ -31,10 +33,16 @@ input {
     height: 60px;
     border-radius: 5px;
     outline: none;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 24px;
+    color: rgb(94, 101, 110);
 }
 
 form {
-    width: 85%;
+    width: 90%;
+    padding-right: 25px;
 }
 
 .input {
