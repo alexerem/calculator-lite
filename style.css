@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 320px;
+    height: 400px;
+    background: linear-gradient(180deg, #6699FF, #0000FF);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.part {
+    background-color: rgba(204, 175, 14, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: 500;
+    border-radius: 2px;
+    color: wheat;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+}
+
+form {
+    width: 85%;
+}
+
+.input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: none;
+    align-items: center;
+}
